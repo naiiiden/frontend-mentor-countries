@@ -69,7 +69,7 @@ header {
   align-items: center;
   justify-content: space-between;
   color: #222;
-  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
 }
 header h1 {
   font-size: 1.125rem;
@@ -105,4 +105,8 @@ header button {
 }
 body {
   font-family: Ubuntu, sans-serif;
+}
+
+.dark {
+  background: #37414b;
 }/*# sourceMappingURL=general.css.map */
