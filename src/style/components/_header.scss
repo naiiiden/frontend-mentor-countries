@@ -10,3 +10,13 @@ header {
         font-size: 1.125rem;
     }
 }
+
+@media screen and (min-width: 1024px) {
+    header {
+        padding: 1rem 5rem;
+
+        h1 {
+            font-size: 1.25rem;
+        }
+    }
+}
