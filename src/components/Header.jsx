@@ -1,13 +1,18 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const Header = () => {
-    const [theme, setTheme] = useState(false);
+    const [isDarkMode, setIsDarkMode] = useState(localStorage.getItem("isDarkMode") === "true" || false);
+
+    useEffect(() => {
+        isDarkMode ? document.body.classList.add("dark") : document.body.classList.remove("dark");
+        localStorage.setItem("isDarkMode", isDarkMode);
+    }, [isDarkMode]);
 
     return (
         <header>
             <h1>Where in the world?</h1>
-            <button aria-label={theme ? "Activate light mode": "Activate dark mode"} onClick={() => setTheme(!theme)}>
-                {theme ? "Light mode" : "Dark mode"}
+            <button aria-label={isDarkMode ? "Activate light mode": "Activate dark mode"} onClick={() => setIsDarkMode(!isDarkMode)}>
+                {isDarkMode ? "Light mode" : "Dark mode"}
             </button>
         </header>
     )
