@@ -9,6 +9,26 @@ header {
     h1 {
         font-size: 1.125rem;
     }
+
+    button {
+        border: none;
+        background: none;
+        display: flex;
+        align-items: center;
+        font-size: .875rem;
+        gap: .5rem;
+    }
+}
+
+.dark {
+    header {
+        background: #2b3743;
+        color: #fff;
+    }
+
+    button {
+        color: inherit;
+    }
 }
 
 @media screen and (min-width: 1024px) {
@@ -18,5 +38,11 @@ header {
         h1 {
             font-size: 1.25rem;
         }
+
+        button {
+            font-size: 1rem;
+            gap: 1rem;
+        }
     }
+
 }
