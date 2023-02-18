@@ -103,10 +103,37 @@ header button {
     gap: 1rem;
   }
 }
+main {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.dark .country-container {
+  width: -moz-fit-content;
+  width: fit-content;
+  background: #2b3743;
+  border-radius: 0.5rem;
+  box-shadow: 0px 0px 2px 8px #202C38;
+  display: flex;
+  flex-direction: column;
+}
+.dark .country-container img {
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+.dark .country-container .text-container {
+  padding: 1rem;
+  color: #fff;
+}
+.dark .country-container .text-container p {
+  font-weight: 400;
+}
+
 body {
   font-family: Ubuntu, sans-serif;
 }
 
 .dark {
-  background: #37414b;
+  background: #212E37;
 }/*# sourceMappingURL=general.css.map */

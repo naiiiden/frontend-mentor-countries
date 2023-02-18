@@ -14,12 +14,14 @@ const Main = () => {
     return (
         <main>
             {data.map((country) => (
-                <div>
+                <div className="country-container">
                     <img src={country.flags["png"]} alt={country.flags["alt"]}/>
-                    <p>{country.name.common}</p>
-                    <p>population: {country.population}</p>
-                    <p>region: {country.region}</p>
-                    <p>capital: {country.capital}</p>
+                    <div className="text-container">
+                        <h2>{country.name.common}</h2>
+                        <p>population: <span>{country.population}</span></p>
+                        <p>region: <span>{country.region}</span></p>
+                        <p>capital: <span>{country.capital}</span></p>
+                    </div>
                 </div>
             ) )}
         </main>

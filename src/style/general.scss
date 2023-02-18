@@ -2,11 +2,12 @@
 
 @import "./reset";
 @import "./components/header";
+@import "./components/main";
 
 body {
     font-family: Ubuntu, sans-serif;
 }
 
 .dark {
-    background: #37414b;
+    background: #212E37;
 }
