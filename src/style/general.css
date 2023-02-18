@@ -104,9 +104,9 @@ header button {
   }
 }
 main {
-  padding: 2rem 3rem;
-  display: flex;
-  flex-direction: column;
+  padding: 2rem 10vw;
+  display: grid;
+  grid-template-columns: 1fr;
   gap: 2rem;
 }
 
