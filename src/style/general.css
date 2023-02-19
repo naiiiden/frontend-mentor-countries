@@ -107,7 +107,7 @@ header button {
     gap: 1rem;
   }
 }
-main {
+.countries-container {
   padding: 2rem 10vw;
   display: grid;
   grid-template-columns: 1fr;
@@ -153,17 +153,17 @@ main {
 }
 
 @media screen and (min-width: 500px) {
-  main {
+  .countries-container {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
 @media screen and (min-width: 768px) {
-  main {
+  .countries-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 @media screen and (min-width: 1024px) {
-  main {
+  .countries-container {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
