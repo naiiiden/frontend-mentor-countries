@@ -109,7 +109,7 @@ main {
   padding: 2rem 10vw;
   display: grid;
   grid-template-columns: 1fr;
-  gap: 2rem;
+  gap: 5vw;
 }
 
 .country-container {
