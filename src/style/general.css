@@ -143,6 +143,17 @@ header button {
   font-weight: 300;
 }
 
+.inputs-container {
+  padding: 2rem 1rem 0 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 3rem;
+}
+.inputs-container input[type=text] {
+  width: 100%;
+}
+
 .search-icon {
   fill: hsl(0deg, 0%, 52%);
 }
