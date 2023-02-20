@@ -150,7 +150,10 @@ header button {
   align-items: start;
   gap: 3rem;
 }
-.inputs-container input[type=text] {
+.inputs-container .text-input-wrapper {
+  width: 100%;
+}
+.inputs-container .text-input-wrapper input[type=text] {
   width: 100%;
 }
 

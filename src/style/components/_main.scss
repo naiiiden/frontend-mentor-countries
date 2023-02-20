@@ -46,8 +46,12 @@
     align-items: start;
     gap: 3rem;
 
-    input[type='text'] {
+    .text-input-wrapper {
         width: 100%;
+
+        input[type='text'] {
+            width: 100%;
+        }
     }
 }
 
