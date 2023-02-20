@@ -169,7 +169,25 @@ header button {
   border-radius: 0.5rem;
   padding: 0.75rem 0.75rem 0.75rem 3.25rem;
 }
+.inputs-container .text-input-wrapper input[type=text]::-moz-placeholder {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
+.inputs-container .text-input-wrapper input[type=text]::placeholder {
+  font-weight: 600;
+  font-size: 0.875rem;
+}
 
+.dark .inputs-container input[type=text] {
+  background: hsl(209deg, 23%, 22%);
+  border: 1px solid transparent;
+}
+.dark .inputs-container input[type=text]::-moz-placeholder {
+  color: #fff;
+}
+.dark .inputs-container input[type=text]::placeholder {
+  color: #fff;
+}
 .dark .search-icon {
   fill: hsl(0deg, 0%, 100%);
 }
