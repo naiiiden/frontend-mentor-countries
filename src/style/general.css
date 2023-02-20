@@ -150,15 +150,24 @@ header button {
   align-items: start;
   gap: 3rem;
 }
+.inputs-container input, .inputs-container select {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
 .inputs-container .text-input-wrapper {
   width: 100%;
+  position: relative;
+}
+.inputs-container .text-input-wrapper svg {
+  position: absolute;
+  left: 18px;
+  top: 12px;
+  fill: hsl(0deg, 0%, 52%);
 }
 .inputs-container .text-input-wrapper input[type=text] {
   width: 100%;
-}
-
-.search-icon {
-  fill: hsl(0deg, 0%, 52%);
+  border: 1px solid #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.75rem 0.75rem 0.75rem 3.25rem;
 }
 
 .dark .search-icon {
