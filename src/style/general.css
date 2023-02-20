@@ -188,6 +188,9 @@ header button {
   .countries-container {
     grid-template-columns: repeat(3, minmax(0, 1fr));
   }
+  .inputs-container {
+    padding: 2rem 10vw 0 10vw;
+  }
 }
 @media screen and (min-width: 1024px) {
   .countries-container {
