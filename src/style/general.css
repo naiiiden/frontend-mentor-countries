@@ -200,6 +200,12 @@ header button {
 .dark .inputs-container input[type=text]::placeholder {
   color: #fff;
 }
+.dark .inputs-container select {
+  background: hsl(209deg, 23%, 22%);
+  border: 1px solid transparent;
+  border-right: 0.75rem solid transparent;
+  color: #fff;
+}
 .dark .search-icon {
   fill: hsl(0deg, 0%, 100%);
 }

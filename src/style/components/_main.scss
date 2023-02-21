@@ -99,6 +99,13 @@
                 color: #fff;
             }
         }
+
+        select {
+            background: hsl(209deg, 23%, 22%);
+            border: 1px solid transparent;
+            border-right: .75rem solid transparent;
+            color: #fff;
+        }
     }
 
     .search-icon {
