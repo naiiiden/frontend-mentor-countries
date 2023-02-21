@@ -50,6 +50,20 @@
         box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
     }
 
+    select {
+        background: #fff;
+        border: 1px solid #f0f0f0;
+        border-radius: .5rem;
+        padding: .75rem;
+        width: 10rem;
+        font-size: .875rem;
+        border-right: .75rem solid transparent;
+
+        option {
+            border: none;
+        }
+    }
+
     .text-input-wrapper {
         width: 100%;
         position: relative;
