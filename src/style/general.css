@@ -193,6 +193,7 @@ header button {
 .dark .inputs-container input[type=text] {
   background: hsl(209deg, 23%, 22%);
   border: 1px solid transparent;
+  color: #fff;
 }
 .dark .inputs-container input[type=text]::-moz-placeholder {
   color: #fff;
