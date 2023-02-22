@@ -10,8 +10,8 @@ const Main = () => {
         .catch((error) => console.log(error.message));
     }, []);
 
-    function testFetch() {
-        fetch("https://restcountries.com/v3.1/region/america")
+    function countriesByRegion(region) {
+        fetch(`https://restcountries.com/v3.1/${region}`)
         .then((response) => response.json())
         .then((data) => (console.log(data), setData(data)))
         .catch((error) => console.log(error.message));
@@ -19,7 +19,6 @@ const Main = () => {
 
     return (
         <main>
-            <button onClick={testFetch}>asd</button>
             <div className="inputs-container">
                 <div className="text-input-wrapper">
                     <input type="text" placeholder="Search for a country..." aria-label="Search for a country by name"/>
@@ -27,13 +26,13 @@ const Main = () => {
                         <path className="search-icon" d="M784 936 532 684q-30 24-69 38t-83 14q-109 0-184.5-75.5T120 476q0-109 75.5-184.5T380 216q109 0 184.5 75.5T640 476q0 44-14 83t-38 69l252 252-56 56ZM380 656q75 0 127.5-52.5T560 476q0-75-52.5-127.5T380 296q-75 0-127.5 52.5T200 476q0 75 52.5 127.5T380 656Z"/>
                     </svg>
                 </div>
-                <select aria-label="Filter countries by region">
-                    <option value="">Filter by region</option>
-                    <option value="africa">Africa</option>
-                    <option value="americas">America</option>
-                    <option value="asia">Asia</option>
-                    <option value="europe">Europe</option>
-                    <option value="oceania">Oceania</option>
+                <select aria-label="Filter countries by region" onClick={(e) => countriesByRegion(e.target.value)}>
+                    <option value="all">Filter by region</option>
+                    <option value="region/africa">Africa</option>
+                    <option value="region/americas">America</option>
+                    <option value="region/asia">Asia</option>
+                    <option value="region/europe">Europe</option>
+                    <option value="region/oceania">Oceania</option>
                 </select>
             </div>
             <div className="countries-container">
