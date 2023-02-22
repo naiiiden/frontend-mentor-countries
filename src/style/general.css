@@ -140,6 +140,7 @@ header svg {
 .country-container .text-container {
   padding: 2rem 1.5rem;
   color: hsl(200deg, 15%, 8%);
+  transition: 0.2s;
 }
 .country-container .text-container h2 {
   font-weight: 800;
@@ -171,6 +172,7 @@ header svg {
   width: 10rem;
   font-size: 0.875rem;
   border-right: 0.75rem solid transparent;
+  transition: 0.2s;
 }
 .inputs-container select option {
   border: none;
@@ -184,41 +186,52 @@ header svg {
   left: 18px;
   top: 12px;
   fill: hsl(0deg, 0%, 52%);
+  transition: 0.2s;
 }
 .inputs-container .text-input-wrapper input[type=text] {
   width: 100%;
   border: 1px solid #f0f0f0;
   border-radius: 0.5rem;
   padding: 0.75rem 0.75rem 0.75rem 3.25rem;
+  transition: 0.2s;
 }
 .inputs-container .text-input-wrapper input[type=text]::-moz-placeholder {
   font-weight: 600;
   font-size: 0.875rem;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
 }
 .inputs-container .text-input-wrapper input[type=text]::placeholder {
   font-weight: 600;
   font-size: 0.875rem;
+  transition: 0.2s;
 }
 
 .dark .inputs-container input[type=text] {
   background: hsl(209deg, 23%, 22%);
   border: 1px solid transparent;
   color: #fff;
+  transition: 0.2s;
 }
 .dark .inputs-container input[type=text]::-moz-placeholder {
   color: #fff;
+  -moz-transition: 0.2s;
+  transition: 0.2s;
 }
 .dark .inputs-container input[type=text]::placeholder {
   color: #fff;
+  transition: 0.2s;
 }
 .dark .inputs-container select {
   background: hsl(209deg, 23%, 22%);
   border: 1px solid transparent;
   border-right: 0.75rem solid transparent;
   color: #fff;
+  transition: 0.2s;
 }
 .dark .search-icon {
   fill: hsl(0deg, 0%, 100%);
+  transition: 0.2s;
 }
 .dark .country-container {
   background: hsl(209deg, 23%, 22%);
@@ -227,6 +240,7 @@ header svg {
 .dark .country-container .text-container {
   padding: 2rem 1.5rem;
   color: hsl(0deg, 0%, 100%);
+  transition: 0.2s;
 }
 
 @media screen and (min-width: 500px) {
