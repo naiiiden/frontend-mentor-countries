@@ -11,7 +11,7 @@ const Main = () => {
     }, []);
 
     function testFetch() {
-        fetch("https://restcountries.com/v3.1/region/europe")
+        fetch("https://restcountries.com/v3.1/region/america")
         .then((response) => response.json())
         .then((data) => (console.log(data), setData(data)))
         .catch((error) => console.log(error.message));
@@ -29,16 +29,16 @@ const Main = () => {
                 </div>
                 <select aria-label="Filter countries by region">
                     <option value="">Filter by region</option>
-                    <option value="">Africa</option>
-                    <option value="">America</option>
-                    <option value="">Asia</option>
-                    <option value="" >Europe</option>
-                    <option value="">Oceania</option>
+                    <option value="africa">Africa</option>
+                    <option value="americas">America</option>
+                    <option value="asia">Asia</option>
+                    <option value="europe">Europe</option>
+                    <option value="oceania">Oceania</option>
                 </select>
             </div>
             <div className="countries-container">
                 {data.map((country) => (
-                    <div className="country-container">
+                    <div className="country-container" key={country.name.common}>
                         <img src={country.flags["png"]} alt={country.flags["alt"]}/>
                         <div className="text-container">
                             <h2>{country.name.common}</h2>
