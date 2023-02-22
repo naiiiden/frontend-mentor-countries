@@ -6,6 +6,7 @@ header {
     color: hsl(200, 15%, 8%);
     background: hsl(0, 0%, 100%);
     box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+    transition: .2s;
 
     h1 {
         font-size: 1.125rem;
@@ -19,6 +20,11 @@ header {
         gap: .5rem;
         font-size: .875rem;
         font-weight: 600;
+        transition: .1s;
+    }
+
+    svg {
+        transition: .2s;
     }
 }
 
@@ -26,10 +32,16 @@ header {
     header {
         background: hsl(209, 23%, 22%);
         color: hsl(0, 0%, 100%);
+        transition: .2s;
     }
 
     button {
         color: inherit;
+        transition: .1s;
+    }
+
+    svg {
+        transition: .2s;
     }
 }
 
