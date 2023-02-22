@@ -6,12 +6,20 @@ const Main = () => {
     useEffect(() => {
         fetch("https://restcountries.com/v3.1/all")
         .then((response) => response.json())
-        .then((data) => ( console.log(data), setData(data)))
+        .then((data) => (console.log(data), setData(data)))
         .catch((error) => console.log(error.message));
     }, []);
 
+    function testFetch() {
+        fetch("https://restcountries.com/v3.1/region/europe")
+        .then((response) => response.json())
+        .then((data) => (console.log(data), setData(data)))
+        .catch((error) => console.log(error.message));
+    }
+
     return (
         <main>
+            <button onClick={testFetch}>asd</button>
             <div className="inputs-container">
                 <div className="text-input-wrapper">
                     <input type="text" placeholder="Search for a country..." aria-label="Search for a country by name"/>
@@ -24,7 +32,7 @@ const Main = () => {
                     <option value="">Africa</option>
                     <option value="">America</option>
                     <option value="">Asia</option>
-                    <option value="">Europe</option>
+                    <option value="" >Europe</option>
                     <option value="">Oceania</option>
                 </select>
             </div>
