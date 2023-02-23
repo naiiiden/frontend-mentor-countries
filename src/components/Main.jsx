@@ -62,7 +62,7 @@ const Main = () => {
                 </select>
             </div>
             <div className="countries-container">
-                {data && data.length > 0 && data.map((country) => (
+                {data?.map((country) => (
                     <div className="country-container" key={country.name.common}>
                         <img src={country.flags["png"]} alt={country.flags["alt"]}/>
                         <div className="text-container">
