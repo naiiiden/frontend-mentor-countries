@@ -20,18 +20,26 @@ const Main = () => {
 
     function countriesByName(name) {
         name === "" 
-        ? fetch(`https://restcountries.com/v3.1/all`) 
+        ? fetch(`https://restcountries.com/v3.1/all`)
+            .then((response) => response.json())
+            .then((data) => (console.log(data), setData(data)))
+            .catch((error) => {
+              console.log(error.message);
+              setData([]);
+              setError("Unable to fetch countries.");
+        })
         : fetch(`https://restcountries.com/v3.1/name/${name}`)
-        .then((response) => {
-            if (!response.ok) {
+            .then((response) => {
+              if (!response.ok) {
                 throw new Error("Country not found");
-            }
-            return response.json()})
-        .then((data) => (console.log(data), setData(data)))
-        .catch((error) => {
-            console.log(error.message)
-            setData([])
-            setError("Country not found.");
+              }
+              return response.json();
+            })
+            .then((data) => (console.log(data), setData(data)))
+            .catch((error) => {
+              console.log(error.message);
+              setData([]);
+              setError("Country not found.");
         });
     }
 
