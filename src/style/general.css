@@ -139,6 +139,13 @@ header svg {
   display: flex;
   flex-direction: column;
   font-size: 0.875rem;
+  opacity: 0;
+  animation: show 0.5s forwards;
+}
+@keyframes show {
+  100% {
+    opacity: 1;
+  }
 }
 .country-container img {
   border-radius: 0.5rem 0.5rem 0 0;
