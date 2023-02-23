@@ -5,6 +5,13 @@
     gap: 5vw;
 }
 
+.error-text {
+    text-align: center;
+    color: hsl(200deg, 15%, 8%);
+    font-size: 1.125rem;
+    transition: .1s;
+}
+
 .country-container {
     background: hsl(0, 0%, 100%);
     width: 100%;
@@ -95,6 +102,11 @@
 }
 
 .dark {
+    .error-text {
+        color: #fff;
+        transition: .1s;
+    }
+
     .inputs-container {
         input[type='text'] {
             background: hsl(209deg, 23%, 22%);

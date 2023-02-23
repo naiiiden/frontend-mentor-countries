@@ -31,7 +31,7 @@ const Main = () => {
         .catch((error) => {
             console.log(error.message)
             setData([])
-            setError("Country not found");
+            setError("Country not found.");
         });
     }
 
@@ -54,7 +54,6 @@ const Main = () => {
                 </select>
             </div>
             <div className="countries-container">
-                {/* {error && error !== "0" & <p>{error}</p>} */}
                 {data && data.length > 0 && data.map((country) => (
                     <div className="country-container" key={country.name.common}>
                         <img src={country.flags["png"]} alt={country.flags["alt"]}/>
@@ -66,8 +65,8 @@ const Main = () => {
                         </div>
                     </div>
                 ))}
-                {data && data.length === 0 && <p>{error}</p>}
             </div>
+            {data && data.length === 0 && <p className="error-text" role="alert" aria-live="assertive">{error}</p>}
         </main>
     )
 }
