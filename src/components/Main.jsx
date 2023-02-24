@@ -6,9 +6,9 @@ const Main = () => {
 
     useEffect(() => {
         fetch("https://restcountries.com/v3.1/all")
-        .then((response) => response.json())
-        .then((data) => (console.log(data), setData(data)))
-        .catch((error) => console.log(error.message));
+            .then((response) => response.json())
+            .then((data) => (console.log(data), setData(data)))
+            .catch((error) => console.log(error.message));
     }, []);
 
     function countriesByRegion(region) {
@@ -27,7 +27,7 @@ const Main = () => {
               console.log(error.message);
               setData([]);
               setError("Unable to fetch countries.");
-        })
+            })
         : fetch(`https://restcountries.com/v3.1/name/${name}`)
             .then((response) => {
               if (!response.ok) {
@@ -40,7 +40,7 @@ const Main = () => {
               console.log(error.message);
               setData([]);
               setError("Country not found.");
-        });
+            });
     }
 
     return (
@@ -63,7 +63,7 @@ const Main = () => {
             </div>
             <div className="countries-container">
                 {data?.map((country) => (
-                    <div className="country-container" key={country.name.common}>
+                    <a href="" className="country-container" key={country.name.common}>
                         <img src={country.flags["png"]} alt={country.flags["alt"]}/>
                         <div className="text-container">
                             <h2>{country.name.common}</h2>
@@ -71,7 +71,7 @@ const Main = () => {
                             <p>Region: <span>{country.region}</span></p>
                             <p>Capital: <span>{country.capital}</span></p>
                         </div>
-                    </div>
+                    </a>
                 ))}
             </div>
             {data && data.length === 0 && <p className="error-text" role="alert" aria-live="assertive">{error}</p>}
