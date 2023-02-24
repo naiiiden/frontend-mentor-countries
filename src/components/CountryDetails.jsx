@@ -20,6 +20,7 @@ const CountryDetails = () => {
     <main>
       <img src={data.flags["png"]} alt={data.flags["alt"]} />
       <h1>{data.name.common}</h1>
+      <p>Native name: {data.name.nativeName?.[Object.keys(data.name.nativeName)[0]].common}</p>
     </main>
   );
 };
