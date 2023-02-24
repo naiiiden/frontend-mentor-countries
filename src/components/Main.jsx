@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 const Main = () => {
     const [data, setData] = useState(null);
@@ -63,7 +64,7 @@ const Main = () => {
             </div>
             <div className="countries-container">
                 {data?.map((country) => (
-                    <a href="" className="country-container" key={country.name.common}>
+                    <Link to={country.name.common.toLowerCase()} className="country-container" key={country.name.common}>
                         <img src={country.flags["png"]} alt={country.flags["alt"]}/>
                         <div className="text-container">
                             <h2>{country.name.common}</h2>
@@ -71,7 +72,7 @@ const Main = () => {
                             <p>Region: <span>{country.region}</span></p>
                             <p>Capital: <span>{country.capital}</span></p>
                         </div>
-                    </a>
+                    </Link>
                 ))}
             </div>
             {data && data.length === 0 && <p className="error-text" role="alert" aria-live="assertive">{error}</p>}
