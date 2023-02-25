@@ -17,7 +17,9 @@ const CountryDetails = () => {
   }
 
   return (
-    <main className="main-details">
+    <main>
+      <button>Back</button>
+      <div className="main-details">
         <img src={data.flags["svg"]} alt={data.flags["alt"]}/>
         <div className="details-container">
           <h1>{data.name.common}</h1>
@@ -36,6 +38,7 @@ const CountryDetails = () => {
             </div>
           </div>
         </div>
+      </div>
     </main>
   );
 };
