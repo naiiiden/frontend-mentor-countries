@@ -178,7 +178,7 @@ header svg {
   padding: 2rem 1rem 0 1rem;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: flex-start;
   gap: 3rem;
 }
 .inputs-container input, .inputs-container select {
@@ -293,6 +293,15 @@ header svg {
 @media screen and (min-width: 1024px) {
   .countries-container {
     grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+.main-details {
+  padding: 2rem 10vw;
+}
+
+@media screen and (min-width: 768px) {
+  .main-details {
+    padding: 3rem 10vw;
   }
 }
 body {
