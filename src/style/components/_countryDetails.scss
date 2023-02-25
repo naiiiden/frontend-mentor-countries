@@ -13,6 +13,21 @@
             font-weight: 300;
         }
     }
+
+    .details-container {
+        margin: 2rem 0;
+        
+        .details-subcontainer {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+    
+            p {
+                margin: .5rem 0;
+            }
+        }
+    }
+
 }
 
 @media screen and (min-width: 768px) {

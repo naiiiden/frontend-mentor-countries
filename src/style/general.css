@@ -308,6 +308,17 @@ header svg {
 .main-details p span {
   font-weight: 300;
 }
+.main-details .details-container {
+  margin: 2rem 0;
+}
+.main-details .details-container .details-subcontainer {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.main-details .details-container .details-subcontainer p {
+  margin: 0.5rem 0;
+}
 
 @media screen and (min-width: 768px) {
   .main-details {
