@@ -18,20 +18,22 @@ const CountryDetails = () => {
 
   return (
     <main className="main-details">
-        <img src={data.flags["svg"]} alt={data.flags["alt"]} />
-        <h1>{data.name.common}</h1>
-        <div className="details-container">
-          <div className="details-subcontainer">
-            <p>Native name: {data.name.nativeName?.[Object.keys(data.name.nativeName)[0]].common}</p>
-            <p>Population: {data.population}</p>
-            <p>Region: {data.region}</p>
-            <p>Sub Region: {data.subregion}</p>
-            <p>Capital: {data.capital}</p>
-          </div>
-          <div className="details-subcontainer">
-            <p>Top Level Domain: {data.tld.join(", ")}</p>
-            <p>Currencies: {Object.values(data.currencies).map(currency => currency.name).join(", ")}</p>
-            <p>Languages: {Object.values(data.languages).join(", ")}</p>
+        <img src={data.flags["svg"]} alt={data.flags["alt"]}/>
+        <div>
+          <h1>{data.name.common}</h1>
+          <div className="details-container">
+            <div className="details-subcontainer">
+              <p>Native name: <span>{data.name.nativeName?.[Object.keys(data.name.nativeName)[0]].common}</span></p>
+              <p>Population: <span>{data.population}</span></p>
+              <p>Region: <span>{data.region}</span></p>
+              <p>Sub Region: <span>{data.subregion}</span></p>
+              <p>Capital: <span>{data.capital}</span></p>
+            </div>
+            <div className="details-subcontainer">
+              <p>Top Level Domain: <span>{data.tld.join(", ")}</span></p>
+              <p>Currencies: <span>{Object.values(data.currencies).map(currency => currency.name).join(", ")}</span></p>
+              <p>Languages: <span>{Object.values(data.languages).join(", ")}</span></p>
+            </div>
           </div>
         </div>
     </main>
