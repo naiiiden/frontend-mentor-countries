@@ -299,11 +299,15 @@ header svg {
   padding: 2rem 10vw;
   color: hsl(200deg, 15%, 8%);
 }
+.main-details img {
+  width: 100%;
+}
 .main-details h1 {
   font-size: 1.375rem;
 }
 .main-details p {
   font-weight: 600;
+  margin: 0.5rem 0;
 }
 .main-details p span {
   font-weight: 300;
@@ -316,8 +320,9 @@ header svg {
   flex-direction: column;
   gap: 2rem;
 }
-.main-details .details-container .details-subcontainer p {
-  margin: 0.5rem 0;
+
+.dark .main-details {
+  color: #fff;
 }
 
 @media screen and (min-width: 768px) {
