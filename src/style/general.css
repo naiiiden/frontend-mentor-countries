@@ -337,6 +337,12 @@ header svg {
     height: 100%;
   }
 }
+@media screen and (min-width: 1024px) {
+  .main-details .details-container .details-subcontainer {
+    flex-direction: row;
+    gap: 4vw;
+  }
+}
 body {
   font-family: Nunito Sans, sans-serif;
   background: hsl(0deg, 0%, 98%);

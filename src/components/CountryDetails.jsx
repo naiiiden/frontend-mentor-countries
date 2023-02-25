@@ -19,7 +19,7 @@ const CountryDetails = () => {
   return (
     <main className="main-details">
         <img src={data.flags["svg"]} alt={data.flags["alt"]}/>
-        <div class="details-container">
+        <div className="details-container">
           <h1>{data.name.common}</h1>
           <div className="details-subcontainer">
             <div className="details-text-wrapper">
