@@ -25,7 +25,7 @@ const CountryDetails = () => {
         <p>Region: {data.region}</p>
         <p>Sub Region: {data.subregion}</p>
         <p>Capital: {data.capital}</p>
-        <p>Top Level Domain: {data.tld}</p>
+        <p>Top Level Domain: {data.tld.join(", ")}</p>
         <p>Currencies: {Object.values(data.currencies).map(currency => currency.name).join(", ")}</p>
         <p>Languages:{Object.values(data.languages).join(", ")}</p>
     </main>
