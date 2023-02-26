@@ -14,7 +14,7 @@ const CountryDetails = () => {
   }, [name]);
 
   useEffect(() => {
-    if (data) {
+    if (data?.borders) {
       fetch(`https://restcountries.com/v3.1/alpha?codes=${data.borders.join(",")}`)
         .then((response) => response.json())
         .then((data) => setBorderCountries(data))
@@ -47,7 +47,7 @@ const CountryDetails = () => {
               <p>Languages: <span>{Object.values(data.languages).join(", ")}</span></p>
             </div>
           </div>
-          <p>Border Countries:{borderCountries.map((country) => country.name.common).join(", ")}</p>
+          {data?.borders && <p>Border Countries: {borderCountries.map((country) => country.name.common).join(", ")}</p>}
         </div>
       </div>
     </main>
