@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const CountryDetails = () => {
   const { name } = useParams();
@@ -28,7 +28,12 @@ const CountryDetails = () => {
 
   return (
     <main>
-      <button>Back</button>
+      <Link to="/" className="back-link">
+      <svg height="20" viewBox="0 96 960 960" width="20">
+        <path d="M480 896 160 576l320-320 57 56-224 224h687v80H313l224 224-57 56Z"/>
+      </svg>
+        Back
+      </Link>
       <div className="main-details">
         <img src={data.flags["svg"]} alt={data.flags["alt"]}/>
         <div className="details-container">
