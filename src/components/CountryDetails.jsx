@@ -52,7 +52,15 @@ const CountryDetails = () => {
               <p>Languages: <span>{Object.values(data.languages).join(", ")}</span></p>
             </div>
           </div>
-          {data?.borders && <p>Border Countries: {borderCountries.map((country) => country.name.common).join(", ")}</p>}
+          {data?.borders && 
+            <div>
+              <p>Border Countries:</p>
+              <ul>
+                {borderCountries.map((country) => 
+                  <li><Link to={country.name.common.toLowerCase()} className="border-country-link">{country.name.common}</Link></li>
+                )}
+              </ul>
+            </div>}
         </div>
       </div>
     </main>
