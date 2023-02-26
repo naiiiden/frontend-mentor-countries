@@ -4,6 +4,7 @@ import { useParams } from "react-router-dom";
 const CountryDetails = () => {
   const { name } = useParams();
   const [data, setData] = useState(null);
+  const [dataCCA3, setDataCCA3] = useState();
 
   useEffect(() => {
     fetch(`https://restcountries.com/v3.1/name/${name}`)
@@ -12,13 +13,20 @@ const CountryDetails = () => {
       .catch((error) => console.log(error.message));
   }, [name]);
 
+  function countriesByCCA3() {
+    fetch(`https://restcountries.com/v3.1/alpha?codes=${data.borders.join(",")}`)
+    .then((response) => response.json())
+    .then((data) => (setDataCCA3(data), console.log(dataCCA3)))
+    .catch((error) => console.log(error.message));
+  }
+
   if (!data) {
     return <div>Loading...</div>;
   }
 
   return (
     <main>
-      <button>Back</button>
+      <button onClick={countriesByCCA3}>Back</button>
       <div className="main-details">
         <img src={data.flags["svg"]} alt={data.flags["alt"]}/>
         <div className="details-container">
