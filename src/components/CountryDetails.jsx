@@ -4,21 +4,23 @@ import { useParams } from "react-router-dom";
 const CountryDetails = () => {
   const { name } = useParams();
   const [data, setData] = useState(null);
-  const [dataCCA3, setDataCCA3] = useState();
+  const [borderCountries, setBorderCountries] = useState([]);
 
   useEffect(() => {
     fetch(`https://restcountries.com/v3.1/name/${name}`)
       .then((response) => response.json())
-      .then((data) => setData(data?.[0], console.log(data[0])))
+      .then((data) => setData(data?.[0]))
       .catch((error) => console.log(error.message));
   }, [name]);
 
-  function countriesByCCA3() {
-    fetch(`https://restcountries.com/v3.1/alpha?codes=${data.borders.join(",")}`)
-    .then((response) => response.json())
-    .then((data) => (setDataCCA3(data), console.log(dataCCA3)))
-    .catch((error) => console.log(error.message));
-  }
+  useEffect(() => {
+    if (data) {
+      fetch(`https://restcountries.com/v3.1/alpha?codes=${data.borders.join(",")}`)
+        .then((response) => response.json())
+        .then((data) => setBorderCountries(data))
+        .catch((error) => console.log(error.message));
+    }
+  }, [data]);
 
   if (!data) {
     return <div>Loading...</div>;
@@ -26,7 +28,7 @@ const CountryDetails = () => {
 
   return (
     <main>
-      <button onClick={countriesByCCA3}>Back</button>
+      <button>Back</button>
       <div className="main-details">
         <img src={data.flags["svg"]} alt={data.flags["alt"]}/>
         <div className="details-container">
@@ -45,7 +47,7 @@ const CountryDetails = () => {
               <p>Languages: <span>{Object.values(data.languages).join(", ")}</span></p>
             </div>
           </div>
-          <p>Border Countries: {data.borders.join(", ").toLowerCase()}</p>
+          <p>Border Countries:{borderCountries.map((country) => country.name.common).join(", ")}</p>
         </div>
       </div>
     </main>
