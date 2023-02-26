@@ -37,6 +37,7 @@ const CountryDetails = () => {
               <p>Languages: <span>{Object.values(data.languages).join(", ")}</span></p>
             </div>
           </div>
+          <p>Border Countries: {data.borders.join(", ").toLowerCase()}</p>
         </div>
       </div>
     </main>
