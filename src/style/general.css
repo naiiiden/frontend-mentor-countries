@@ -339,10 +339,15 @@ header svg {
   flex-wrap: wrap;
   gap: 0.5rem;
 }
-.main-details .bc-container ul li {
+.main-details .bc-container ul a {
   box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
   border-radius: 0.25rem;
   padding: 0.25rem 1.25rem;
+  display: block;
+}
+.main-details .bc-container ul a:hover, .main-details .bc-container ul a:focus {
+  outline-offset: 2px;
+  transform: scale(1.05);
 }
 
 .dark .main-details {
@@ -351,7 +356,7 @@ header svg {
 .dark .main-details .bc-container p {
   font-size: 1rem;
 }
-.dark .main-details .bc-container ul li {
+.dark .main-details .bc-container ul a {
   background: hsl(209, 23%, 22%);
 }
 .dark .back-link {
@@ -368,6 +373,9 @@ header svg {
   }
   .main-details {
     padding: 5rem 10vw;
+  }
+  .main-details h1 {
+    font-size: 1.625rem;
   }
   .main-details img {
     width: 100%;
