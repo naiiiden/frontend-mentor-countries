@@ -5,11 +5,11 @@
     display: inline-flex;
     align-items: center;
     gap: 1rem;
-    margin: 2rem 10vw 0 10vw;
+    margin: 3rem 10vw 0 10vw;
 }
 
 .main-details {
-    padding: 2rem 10vw;
+    padding: 3rem 10vw;
     color: hsl(200deg, 15%, 8%);
 
     img {
@@ -88,11 +88,11 @@
 
 @media screen and (min-width: 768px) {
     .back-link {
-        margin: 3rem 10vw 0 10vw;
+        margin: 5rem 10vw 0 10vw;
     }
 
     .main-details {
-        padding: 3rem 10vw;
+        padding: 5rem 10vw;
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 5vw;
