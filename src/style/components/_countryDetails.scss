@@ -75,6 +75,15 @@
             }
         }
     }
+
+    .back-link {
+        background: hsl(209, 23%, 22%);
+        color: #fff;
+
+        svg {
+            fill: white;
+        }
+    }
 }
 
 @media screen and (min-width: 768px) {

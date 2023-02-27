@@ -354,6 +354,13 @@ header svg {
 .dark .main-details .bc-container ul li {
   background: hsl(209, 23%, 22%);
 }
+.dark .back-link {
+  background: hsl(209, 23%, 22%);
+  color: #fff;
+}
+.dark .back-link svg {
+  fill: white;
+}
 
 @media screen and (min-width: 768px) {
   .back-link {
