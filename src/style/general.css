@@ -295,6 +295,16 @@ header svg {
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
+.back-link {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1.25rem;
+  display: inline-flex;
+  align-items: center;
+  gap: 1rem;
+  margin: 2rem 10vw 0 10vw;
+}
+
 .main-details {
   padding: 2rem 10vw;
   color: hsl(200, 15%, 8%);
