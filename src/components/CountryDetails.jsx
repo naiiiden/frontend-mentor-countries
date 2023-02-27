@@ -57,7 +57,7 @@ const CountryDetails = () => {
               <p>Border Countries:</p>
               <ul>
                 {borderCountries.map((country) => 
-                  <li><Link to={`/${country.name.common.toLowerCase()}`} className="border-country-link">{country.name.common}</Link></li>
+                  <li key={country.name.common}><Link to={`/${country.name.common.toLowerCase()}`} className="border-country-link">{country.name.common}</Link></li>
                 )}
               </ul>
             </div>}
