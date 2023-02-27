@@ -53,7 +53,7 @@ const CountryDetails = () => {
             </div>
           </div>
           {data?.borders && 
-            <div>
+            <div className="bc-container">
               <p>Border Countries:</p>
               <ul>
                 {borderCountries.map((country) => 

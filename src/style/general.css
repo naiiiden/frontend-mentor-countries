@@ -318,7 +318,21 @@ header svg {
 .main-details .details-container .details-subcontainer {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
+  margin: 1rem 0;
+}
+.main-details .bc-container p {
+  font-size: 1.125rem;
+}
+.main-details .bc-container ul {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.main-details .bc-container ul li {
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 4px 12px;
+  border-radius: 0.25rem;
+  padding: 0.25rem 1.25rem;
 }
 
 .dark .main-details {
