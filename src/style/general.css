@@ -368,19 +368,21 @@ header svg {
   }
   .main-details {
     padding: 5rem 10vw;
-    display: grid;
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-    gap: 5vw;
   }
   .main-details img {
     width: 100%;
     height: 100%;
   }
-}
-@media screen and (min-width: 1024px) {
   .main-details .details-container .details-subcontainer {
     flex-direction: row;
     gap: 4vw;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-details {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 5vw;
   }
 }
 body {
