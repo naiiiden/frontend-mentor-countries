@@ -338,6 +338,12 @@ header svg {
 .dark .main-details {
   color: #fff;
 }
+.dark .main-details .bc-container p {
+  font-size: 1rem;
+}
+.dark .main-details .bc-container ul li {
+  background: hsl(209, 23%, 22%);
+}
 
 @media screen and (min-width: 768px) {
   .main-details {

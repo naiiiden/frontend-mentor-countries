@@ -52,6 +52,18 @@
 .dark {
     .main-details {
         color: #fff;
+
+        .bc-container {
+            p {
+                font-size: 1rem;
+            }
+
+            ul {
+                li {
+                    background: hsl(209, 23%, 22%);
+                }
+            }
+        }
     }
 }
 
