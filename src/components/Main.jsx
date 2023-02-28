@@ -64,7 +64,7 @@ const Main = () => {
             </div>
             <div className="countries-container">
                 {data?.map((country) => (
-                    <Link to={country.name.common.toLowerCase()} className="country-container" key={country.name.common}>
+                    <Link to={country.name.common.toLowerCase()} className="country-container" key={country.name.common} aria-label={`Learn more about ${country.name.common}`} title={`Learn more about ${country.name.common}`}>
                         <img src={country.flags["png"]} alt={country.flags["alt"]}/>
                         <div className="text-container">
                             <h2>{country.name.common}</h2>
