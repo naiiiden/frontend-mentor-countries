@@ -7,7 +7,6 @@
 
 .error-text {
     text-align: center;
-    color: hsl(200deg, 15%, 8%);
     font-size: 1.125rem;
     transition: .1s;
 }
@@ -50,14 +49,6 @@
             font-weight: 800;
             font-size: 1.25rem;
             margin-bottom: 1rem;
-        }
-
-        p {
-            font-weight: 600;
-
-            span {
-                font-weight: 300;
-            }
         }
     }
 }
@@ -118,7 +109,6 @@
 
 .dark {
     .error-text {
-        color: #fff;
         transition: .1s;
     }
 
@@ -142,11 +132,6 @@
             color: #fff;
             transition: .2s;
         }
-    }
-
-    .search-icon {
-        fill: hsl(0deg, 0%, 100%);
-        transition: .2s;
     }
 
     .country-container {

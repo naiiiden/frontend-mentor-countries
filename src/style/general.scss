@@ -11,6 +11,11 @@ body {
 
     p, h1, a, li {
         color: hsl(200deg, 15%, 8%);
+        font-weight: 600;
+    
+        span {
+            font-weight: 300;
+        }
     }
 }
 

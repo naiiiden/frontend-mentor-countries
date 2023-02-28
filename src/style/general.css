@@ -126,7 +126,6 @@ header svg {
 
 .error-text {
   text-align: center;
-  color: hsl(200, 15%, 8%);
   font-size: 1.125rem;
   transition: 0.1s;
 }
@@ -166,12 +165,6 @@ header svg {
   font-weight: 800;
   font-size: 1.25rem;
   margin-bottom: 1rem;
-}
-.country-container .text-container p {
-  font-weight: 600;
-}
-.country-container .text-container p span {
-  font-weight: 300;
 }
 
 .inputs-container {
@@ -228,7 +221,6 @@ header svg {
 }
 
 .dark .error-text {
-  color: #fff;
   transition: 0.1s;
 }
 .dark .inputs-container input[type=text] {
@@ -251,10 +243,6 @@ header svg {
   border: 1px solid transparent;
   border-right: 0.75rem solid transparent;
   color: #fff;
-  transition: 0.2s;
-}
-.dark .search-icon {
-  fill: hsl(0, 0%, 100%);
   transition: 0.2s;
 }
 .dark .country-container {
@@ -316,11 +304,7 @@ header svg {
   font-size: 1.375rem;
 }
 .main-details p {
-  font-weight: 600;
   margin: 0.5rem 0;
-}
-.main-details p span {
-  font-weight: 300;
 }
 .main-details .details-container {
   margin: 2rem 0;
@@ -350,9 +334,6 @@ header svg {
   transform: scale(1.05);
 }
 
-.dark .main-details .bc-container p {
-  font-size: 1rem;
-}
 .dark .main-details .bc-container ul a {
   background: hsl(209, 23%, 22%);
 }
@@ -388,6 +369,10 @@ body {
 }
 body p, body h1, body a, body li {
   color: hsl(200, 15%, 8%);
+  font-weight: 600;
+}
+body p span, body h1 span, body a span, body li span {
+  font-weight: 300;
 }
 
 .dark {
