@@ -307,10 +307,10 @@ header svg {
 
 .main-details {
   padding: 3rem 10vw;
-  color: hsl(200, 15%, 8%);
 }
 .main-details img {
   width: 100%;
+  height: 100%;
 }
 .main-details h1 {
   font-size: 1.375rem;
@@ -350,9 +350,6 @@ header svg {
   transform: scale(1.05);
 }
 
-.dark .main-details {
-  color: #fff;
-}
 .dark .main-details .bc-container p {
   font-size: 1rem;
 }
@@ -361,10 +358,6 @@ header svg {
 }
 .dark .back-link {
   background: hsl(209, 23%, 22%);
-  color: #fff;
-}
-.dark .back-link svg {
-  fill: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -376,10 +369,6 @@ header svg {
   }
   .main-details h1 {
     font-size: 1.625rem;
-  }
-  .main-details img {
-    width: 100%;
-    height: 100%;
   }
   .main-details .details-container .details-subcontainer {
     flex-direction: row;
@@ -397,7 +386,16 @@ body {
   font-family: Nunito Sans, sans-serif;
   background: hsl(0, 0%, 98%);
 }
+body p, body h1, body a, body li {
+  color: hsl(200, 15%, 8%);
+}
 
 .dark {
   background: hsl(207, 26%, 17%);
+}
+.dark .svg-icon {
+  fill: #fff;
+}
+.dark p, .dark h1, .dark a, .dark li {
+  color: #fff;
 }/*# sourceMappingURL=general.css.map */

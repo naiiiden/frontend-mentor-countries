@@ -8,10 +8,22 @@
 body {
     font-family: Nunito Sans, sans-serif;
     background: hsl(0, 0%, 98%);
+
+    p, h1, a, li {
+        color: hsl(200deg, 15%, 8%);
+    }
 }
 
 .dark {
     background: hsl(207, 26%, 17%);
+
+    .svg-icon {
+        fill: #fff;
+    }
+
+    p, h1, a, li {
+        color: #fff;
+    }
 }
 
 // - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)

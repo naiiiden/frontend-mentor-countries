@@ -30,7 +30,7 @@ const CountryDetails = () => {
     <main>
       <Link to="/" className="back-link">
       <svg height="20" viewBox="0 96 960 960" width="20">
-        <path d="M480 896 160 576l320-320 57 56-224 224h687v80H313l224 224-57 56Z"/>
+        <path className="svg-icon" d="M480 896 160 576l320-320 57 56-224 224h687v80H313l224 224-57 56Z"/>
       </svg>
         Back
       </Link>

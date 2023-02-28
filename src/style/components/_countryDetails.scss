@@ -10,10 +10,10 @@
 
 .main-details {
     padding: 3rem 10vw;
-    color: hsl(200deg, 15%, 8%);
 
     img {
         width: 100%;
+        height: 100%;
     }
 
     h1 {
@@ -67,8 +67,6 @@
 
 .dark {
     .main-details {
-        color: #fff;
-
         .bc-container {
             p {
                 font-size: 1rem;
@@ -84,11 +82,6 @@
 
     .back-link {
         background: hsl(209, 23%, 22%);
-        color: #fff;
-
-        svg {
-            fill: white;
-        }
     }
 }
 
@@ -102,11 +95,6 @@
         
         h1 {
             font-size: 1.625rem;
-        }
-
-        img {
-            width: 100%;
-            height: 100%;
         }
 
         .details-container {
@@ -123,6 +111,5 @@
         display: grid;
         grid-template-columns: repeat(2, minmax(0, 1fr));
         gap: 5vw;
-        
     }
 }
