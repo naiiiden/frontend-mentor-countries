@@ -8,14 +8,14 @@ const Main = () => {
     useEffect(() => {
         fetch("https://restcountries.com/v3.1/all")
             .then((response) => response.json())
-            .then((data) => (console.log(data), setData(data)))
+            .then((data) => setData(data))
             .catch((error) => console.log(error.message));
     }, []);
 
     function countriesByRegion(region) {
         fetch(`https://restcountries.com/v3.1/${region}`)
         .then((response) => response.json())
-        .then((data) => (console.log(data), setData(data)))
+        .then((data) => setData(data))
         .catch((error) => console.log(error.message));
     }
 
@@ -23,7 +23,7 @@ const Main = () => {
         name === "" 
         ? fetch(`https://restcountries.com/v3.1/all`)
             .then((response) => response.json())
-            .then((data) => (console.log(data), setData(data)))
+            .then((data) => setData(data))
             .catch((error) => {
               console.log(error.message);
               setData([]);
@@ -36,7 +36,7 @@ const Main = () => {
               }
               return response.json();
             })
-            .then((data) => (console.log(data), setData(data)))
+            .then((data) => setData(data))
             .catch((error) => {
               console.log(error.message);
               setData([]);
