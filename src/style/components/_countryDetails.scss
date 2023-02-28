@@ -60,22 +60,6 @@
     }
 }
 
-.dark {
-    .main-details {
-        .bc-container {
-            ul {
-                a {
-                    background: hsl(209, 23%, 22%);
-                }
-            }
-        }
-    }
-
-    .back-link {
-        background: hsl(209, 23%, 22%);
-    }
-}
-
 @media screen and (min-width: 768px) {
     .back-link {
         margin: 5rem 10vw 0 10vw;
