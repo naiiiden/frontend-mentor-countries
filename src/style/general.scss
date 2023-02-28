@@ -9,7 +9,7 @@ body {
     font-family: Nunito Sans, sans-serif;
     background: hsl(0, 0%, 98%);
 
-    p, h1, a, li, select, input[type='text'] {
+    header, p, h1, a, li, select, input[type='text'] {
         color: hsl(200deg, 15%, 8%);    
     }
     
@@ -21,7 +21,7 @@ body {
         }
     }
 
-    .country-container, select, input[type='text'] {
+    header, .country-container, select, input[type='text'] {
         background: #fff;
     }
 }
@@ -33,18 +33,11 @@ body {
         fill: #fff;
     }
 
-    p, h1, a, li, select, input[type='text'] {
+    header, p, h1, a, li, select, input[type='text'] {
         color: #fff;
     }
 
-    .country-container, select, input[type='text'], .back-link, ul a {
+    header, .country-container, select, input[type='text'], .back-link, ul a {
         background: hsl(209, 23%, 22%);
     }
 }
-
-// - Dark Blue (Dark Mode Elements): hsl(209, 23%, 22%)
-// - Very Dark Blue (Dark Mode Background): hsl(207, 26%, 17%)
-// - Very Dark Blue (Light Mode Text): hsl(200, 15%, 8%)
-// - Dark Gray (Light Mode Input): hsl(0, 0%, 52%)
-// - Very Light Gray (Light Mode Background): hsl(0, 0%, 98%)
-// - White (Dark Mode Text & Light Mode Elements): hsl(0, 0%, 100%)

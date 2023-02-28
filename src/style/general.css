@@ -68,10 +68,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  color: hsl(200, 15%, 8%);
-  background: hsl(0, 0%, 100%);
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  transition: 0.2s;
 }
 header h1 {
   font-size: 1.125rem;
@@ -86,21 +83,9 @@ header button {
   font-weight: 600;
   transition: 0.1s;
 }
-header svg {
-  transition: 0.2s;
-}
 
-.dark header {
-  background: hsl(209, 23%, 22%);
-  color: hsl(0, 0%, 100%);
-  transition: 0.2s;
-}
 .dark button {
   color: inherit;
-  transition: 0.1s;
-}
-.dark svg {
-  transition: 0.2s;
 }
 
 @media screen and (min-width: 768px) {
@@ -328,7 +313,7 @@ body {
   font-family: Nunito Sans, sans-serif;
   background: hsl(0, 0%, 98%);
 }
-body p, body h1, body a, body li, body select, body input[type=text] {
+body header, body p, body h1, body a, body li, body select, body input[type=text] {
   color: hsl(200, 15%, 8%);
 }
 body p {
@@ -337,7 +322,7 @@ body p {
 body p span {
   font-weight: 300;
 }
-body .country-container, body select, body input[type=text] {
+body header, body .country-container, body select, body input[type=text] {
   background: #fff;
 }
 
@@ -347,9 +332,9 @@ body .country-container, body select, body input[type=text] {
 .dark .svg-icon {
   fill: #fff;
 }
-.dark p, .dark h1, .dark a, .dark li, .dark select, .dark input[type=text] {
+.dark header, .dark p, .dark h1, .dark a, .dark li, .dark select, .dark input[type=text] {
   color: #fff;
 }
-.dark .country-container, .dark select, .dark input[type=text], .dark .back-link, .dark ul a {
+.dark header, .dark .country-container, .dark select, .dark input[type=text], .dark .back-link, .dark ul a {
   background: hsl(209, 23%, 22%);
 }/*# sourceMappingURL=general.css.map */
