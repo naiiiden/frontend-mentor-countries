@@ -28,7 +28,7 @@ const CountryDetails = () => {
 
   return (
     <main>
-      <Link to="/" className="back-link">
+      <Link to="/" className="back-link" aria-label="Go to main page">
       <svg height="20" viewBox="0 96 960 960" width="20">
         <path className="svg-icon" d="M480 896 160 576l320-320 57 56-224 224h687v80H313l224 224-57 56Z"/>
       </svg>
@@ -57,7 +57,7 @@ const CountryDetails = () => {
               <p>Border Countries:</p>
               <ul>
                 {borderCountries.map((country) => 
-                  <li key={country.name.common}><Link to={`/${country.name.common.toLowerCase()}`} className="border-country-link">{country.name.common}</Link></li>
+                  <li key={country.name.common}><Link to={`/${country.name.common.toLowerCase()}`} className="border-country-link" aria-label={`View details about ${country.name.common}`}>{country.name.common}</Link></li>
                 )}
               </ul>
             </div>}
