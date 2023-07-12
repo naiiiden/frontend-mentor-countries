@@ -4,7 +4,6 @@ This is a solution to the [REST Countries API with color theme switcher challeng
 
 #### Known Issues
 1) Filtering countries by region and searching a country from the text input don't work together.
-2) I have trouble deploying the app to github pages. I get bad API calls... I'll figure it out soon. <br> So for now clone the repo and run `npm install` and `npm run preview` 
 
 ## screenshots
 ### Mobile Design
